@@ -1,34 +1,34 @@
 class Solution {
     public boolean checkValidString(String s) {
-        int n=s.length();
-        
-        Stack<Integer> open=new Stack<>();
-        Stack<Integer> star=new Stack<>();
+        int min = 0;
+        int max = 0;
 
+        for (char c : s.toCharArray()) {
 
-        for(int i=0; i<n; i++){
-
-            if(s.charAt(i)=='('){
-                open.push(i);
-            }else if(s.charAt(i)=='*'){
-                star.push(i);
-            }else{
-                if(!open.isEmpty()){
-                    open.pop();
-                }else if(!star.isEmpty()){
-                    star.pop();
-                }else{
-                    return false;
-                }
+            if (c == '(') {
+                min++;
+                max++;
+            } 
+            else if (c == ')') {
+                min--;
+                max--;
+            } 
+            else { // '*'
+                min--; // '*' acts as ')'
+                max++; // '*' acts as '('
             }
 
-        }
-        while(!open.isEmpty() && !star.isEmpty()){
-            if(open.pop()>star.pop()){
+            // Too many ')' even after using '*' as '('
+            if (max < 0) {
                 return false;
             }
-        }
-        return open.isEmpty();
 
+            // min cannot be negative
+            if (min < 0) {
+                min = 0;
+            }
+        }
+
+        return min == 0;
     }
 }
