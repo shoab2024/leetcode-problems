@@ -32,4 +32,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/shoab2024/https-github.com-shoab2024-leetcode-problems/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0136-single-number](https://github.com/shoab2024/https-github.com-shoab2024-leetcode-problems/tree/master/0136-single-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0136-single-number](https://github.com/shoab2024/https-github.com-shoab2024-leetcode-problems/tree/master/0136-single-number) |
 <!---LeetCode Topics End-->
