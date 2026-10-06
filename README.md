@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/shoab2024/leetcode-problems/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/shoab2024/https-github.com-shoab2024-leetcode-problems/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/shoab2024/https-github.com-shoab2024-leetcode-problems/tree/master/0136-single-number) |
 | [0704-binary-search](https://github.com/shoab2024/leetcode-problems/tree/master/0704-binary-search) |
@@ -41,5 +42,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/shoab2024/leetcode-problems/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0704-binary-search](https://github.com/shoab2024/leetcode-problems/tree/master/0704-binary-search) |
 <!---LeetCode Topics End-->
