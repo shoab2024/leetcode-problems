@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/shoab2024/https-github.com-shoab2024-leetcode-problems/tree/master/0136-single-number) |
 | [0368-largest-divisible-subset](https://github.com/shoab2024/leetcode-problems/tree/master/0368-largest-divisible-subset) |
 | [0704-binary-search](https://github.com/shoab2024/leetcode-problems/tree/master/0704-binary-search) |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/shoab2024/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -54,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/shoab2024/leetcode-problems/tree/master/0368-largest-divisible-subset) |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/shoab2024/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 ## Sorting
 |  |
 | ------- |
