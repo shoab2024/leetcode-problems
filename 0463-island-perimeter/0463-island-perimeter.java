@@ -1,34 +1,41 @@
 class Solution {
+    private int solvedfs(int x,int y, int[][] grid,int[][] visited){
+        int r=grid.length;
+        int c=grid[0].length;
+        if(x<0 || y<0 || x >=r || y >=c || grid[x][y]==0){
+            return 1;
+        }
+
+        if(visited[x][y]==1){
+            return 0;
+        }
+        visited[x][y]=1;
+
+
+        int peri=0;
+
+        peri+= solvedfs(x-1,y,grid,visited);
+        peri+= solvedfs(x+1,y,grid,visited);
+        peri+= solvedfs(x,y-1,grid,visited);
+        peri+= solvedfs(x,y+1,grid,visited);
+
+        return peri;
+    }
     public int islandPerimeter(int[][] grid) {
-        int row = grid.length;
-        int col = grid[0].length;
+        int r=grid.length;
+        int c=grid[0].length;
 
-        int perimeter = 0;
+        int[][] visited=new int[r][c];
 
-        // Iterate through all cells in the grid 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                // Process only land cells 🏝️
-                if (grid[i][j] == 1) {
-                    // Check - UP ⬆
-                    if (i == 0 || grid[i - 1][j] == 0) {
-                        perimeter++;
-                    }
-                    // Check - DOWN ⬇
-                    if (i == row - 1 || grid[i + 1][j] == 0) {
-                        perimeter++;
-                    }
-                    // Check - LEFT ⬅
-                    if (j == 0 || grid[i][j - 1] == 0) {
-                        perimeter++;
-                    }
-                    // Check - RIGHT 
-                    if (j == col - 1 || grid[i][j + 1] == 0) {
-                        perimeter++;
-                    }
+        for(int i=0; i<r; i++){
+            for(int j=0;j<c; j++){
+                if(grid[i][j]==1){
+                   return solvedfs(i,j,grid,visited);
+
                 }
             }
         }
-        return perimeter;
+
+        return 0;
     }
 }
